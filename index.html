@@ -1,39 +1,271 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Uberlandis Fiol Reyes – Portafolio Profesional</title>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DP6S5OKSMF"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DP6S5OKSMF');
-    </script>
-    <!-- Fin Google Analytics -->
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #111;
-        }
-        header {
-            background: #000;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        /* ... resto del CSS de Qwen3-Max ... */
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uberlandis Fiol – Portafolio Profesional</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #0d0d0d;
+      font-family: Arial, sans-serif;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+
+    /* MENÚ SUPERIOR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #111;
+      padding: 14px 0;
+      border-bottom: 1px solid #222;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #e0e0e0;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00c8ff;
+    }
+
+    /* CONTENEDOR GENERAL */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 120px auto 40px;
+    }
+
+    section {
+      margin-bottom: 70px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #222;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #00c8ff;
+      margin-bottom: 15px;
+      border-left: 6px solid #00c8ff;
+      padding-left: 10px;
+    }
+
+    /* TARJETAS */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      border-color: #00c8ff;
+      transform: translateY(-4px);
+    }
+
+    /* GALERÍA TIPO NETFLIX */
+    .netflix-row {
+      display: flex;
+      gap: 15px;
+      overflow-x: scroll;
+      padding-bottom: 10px;
+    }
+
+    .netflix-row::-webkit-scrollbar {
+      height: 8px;
+    }
+    .netflix-row::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 20px;
+    }
+
+    .video-card {
+      min-width: 260px;
+      height: 150px;
+      background: #222;
+      border-radius: 8px;
+      border: 1px solid #444;
+      flex-shrink: 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .video-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* GALERÍA DE IMÁGENES */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #222;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      padding: 25px;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #222;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
-    <!-- ... todo el contenido HTML de Qwen3-Max ... -->
+
+  <!-- MENÚ SUPERIOR -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#investigaciones">Investigaciones</a></li>
+      <li><a href="#resistencia">Resistencia Táctica</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#galeria">Galería</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- PRESENTACIÓN -->
+    <section id="inicio">
+      <h2>Uberlandis Fiol Reyes</h2>
+      <p>
+        Investigador independiente especializado en análisis, resiliencia operativa, estrategia y evaluación táctica.  
+        Desarrollador de estudios de mercado, proyectos visuales, contenido analítico y plataformas experimentales como SOER.
+      </p>
+    </section>
+
+    <!-- INVESTIGACIONES -->
+    <section id="investigaciones">
+      <h2>Investigaciones de Mercado</h2>
+      <p>
+        Estudios avanzados sobre públicos, mercados, tendencias y proyecciones estratégicas.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Perfil del Consumidor 2025</h3>
+          <p>Análisis de patrones, decisiones y poder adquisitivo.</p>
+        </div>
+
+        <div class="card">
+          <h3>Rutas de Expansión Digital</h3>
+          <p>Evaluación de plataformas y crecimiento táctico.</p>
+        </div>
+
+        <div class="card">
+          <h3>Competencia y Posicionamiento</h3>
+          <p>Mapa estratégico y ventaja comparativa.</p>
+        </div>
+
+        <div class="card">
+          <h3>Proyecciones Comerciales</h3>
+          <p>Escenarios y predicción basada en datos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESISTENCIA TÁCTICA -->
+    <section id="resistencia">
+      <h2>Resistencia Táctica</h2>
+      <p>
+        Proyecto personal enfocado en resiliencia física, entrenamiento operativo y desarrollo mental.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Entrenamientos</h3>
+          <p>Seguimiento de cargas, progresiones y pruebas.</p>
+        </div>
+
+        <div class="card">
+          <h3>Material Audiovisual</h3>
+          <p>Reels, videos y reportes desde la página oficial.</p>
+        </div>
+
+        <div class="card">
+          <h3>Protocolos</h3>
+          <p>Documentos tácticos y análisis situacional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN NETFLIX DE VIDEOS -->
+    <section id="videos">
+      <h2>Reels y Videos (estilo Netflix)</h2>
+      <div class="netflix-row">
+
+        <div class="video-card">
+          <img src="https://via.placeholder.com/400x200?text=Video+1" alt="">
+        </div>
+
+        <div class="video-card">
+          <img src="https://via.placeholder.com/400x200?text=Video+2" alt="">
+        </div>
+
+        <div class="video-card">
+          <img src="https://via.placeholder.com/400x200?text=Video+3" alt="">
+        </div>
+
+        <div class="video-card">
+          <img src="https://via.placeholder.com/400x200?text=Video+4" alt="">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERÍA DE IMÁGENES -->
+    <section id="galeria">
+      <h2>Galería</h2>
+
+      <div class="image-grid">
+        <img src="https://via.placeholder.com/600x400?text=Imagen+1" alt="">
+        <img src="https://via.placeholder.com/600x400?text=Imagen+2" alt="">
+        <img src="https://via.placeholder.com/600x400?text=Imagen+3" alt="">
+        <img src="https://via.placeholder.com/600x400?text=Imagen+4" alt="">
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 Uberlandis Fiol Reyes – Portafolio Profesional
+  </footer>
+
 </body>
-</html>
+          </html>
